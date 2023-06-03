@@ -1,1 +1,16 @@
 # microservices-in-python
+-Installing Python 3.X
+- Creating Python Virtual Environments (python -m venv <env_name>  then activate it by running activate.bat)
+- Installing Python VS Code Extension
+- Sample Flask Application 
+    - install flask using - pip install Flask
+    - to check whats install - pip list
+    - To run use cmd : flask --app app run
+    - To initialise db use cmd : flask --app app init-db
+- Jinja templating for Dynamic Web Pages (import render_template)
+- Using Pip to Freeze Python Dependencies (pip freeze  > requirements.txt )
+    - to install dependencies cmd - pip install -r <filename(requirements.txt)>
+- Building the docker image using Dockerfile
+- Writing Docker Compose file
+- Writing Kubernetes Manifest files for the application
+- Creating Helm Chart

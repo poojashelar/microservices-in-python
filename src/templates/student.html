@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <head>
+        <title>
+            MCQ Examination Center
+        </title>
+    </head>
+    <style>
+        .btn {
+                padding: 10px auto  40px auto;
+                background-color: blueviolet;
+                color: #FFFFFF;
+                font-style: oblique;
+                font-weight: bold;
+                border-radius: 10px;
+                margin: 10px;
+                width: 20%;
+            }
+
+        .modal-content {
+        background-color: whitesmoke;
+        margin: 5% auto 15% auto;
+        border: 1px solid #888;
+        width: 40%;
+        }
+
+        .centered {
+            text-align: center;
+            padding: 14px 20px;
+        }
+
+    </style>
+    <body>
+        <h1 style="text-align: center; color: blueviolet;"> Welcome to MCQ Examination Center!</h1>
+            <form class = "modal-content" method="POST">
+                <h2 class = "centered">Please choose subject to take test :</h2>
+                    {% for item in sublist %}
+                    <div style="margin-left: 22%;">
+                            <input type="radio" name="subjects" value = "{{ item.name }}">
+                            <label for="subjects">{{ item.name }} Programming Language</label>
+                    </div>
+                     {% endfor %}
+                    <br>
+                    <br>
+                    <div class="centered">
+                        <button type="submit" class="btn centered">Start</button> 
+                        <span style="float: initial;"><a href="{{ url_for('McqExamCenterServices.logout') }}" class="btn centered">Logout</a></span>
+                </div>
+                <br>
+                <br>
+            </form>
+    </body>
+</html>
+

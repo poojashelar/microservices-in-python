@@ -1,0 +1,20 @@
+Problem Statement:
+
+1. Show welcome page for MCQ Examination
+2. Login button to show login form to take exam (uname & password). 
+3. If new student then Signup form should display
+4. Post login, select Subject and click start exam. based on subject selection, pick random  questions with options from question bank.
+5. post submission of question and answer, calculate score and show it to student.
+6. if score is not 100 % then show retake button to restart test.
+7. Maintain Student's history of retakes, studentname, password, subject for which exam took and score for the same
+
+
+Admin functionality:
+registerStudent when he signed up
+Authenticate Student while login
+getAllStudentslist who has registered
+getStudents who secured 100% in examination
+getStudent by email
+
+for Student :
+can see history of his enrolled exams, retake and score
