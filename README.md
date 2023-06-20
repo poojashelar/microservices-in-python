@@ -1,9 +1,9 @@
-#microservices-in-python:
+# microservices-in-python:
 
 Problem Statement- Create MCQ Examination Center web app to take quick mcq test using Flask. 
-DB Used - sqlite 
-
-Attached more materials : Detailed problem statement,  Application Class Diagram, flowchart etc.
+- DB Used - sqlite 
+- When start the application, to login as admin, use username & password as admin/admin@123
+- Attached more materials : Detailed problem statement,  Application Class Diagram, flowchart etc.
 
 To Setup Environment follow below steps:
 
