@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, jsonify, render_template
 import os
 from dbio.dbutils import DbUtils
 from admin import McqExamCenterServices
@@ -25,6 +25,12 @@ def create_app():
     except OSError:
         pass
 
+    @app.route("/health")
+    def health():
+        return jsonify(
+            srarus="Up"
+        )
+
     @app.route("/")
     def welcomePage():
         return render_template("index.html")
@@ -36,6 +42,6 @@ def create_app():
     app.register_blueprint(McqExamCenterServices.bp)
 
     if __name__ == '__main__':
-        app.run(host='0.0.0.0', port=30006, debug=True)
+        app.run(host='0.0.0.0', port=5000)
 
     return app
