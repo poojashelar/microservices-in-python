@@ -1,1 +1,0 @@
-'''init() for com.exam.beans'''
