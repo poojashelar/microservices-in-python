@@ -1,4 +1,4 @@
-microservices-in-python:
+#microservices-in-python:
 
 Problem Statement- Create MCQ Examination Center web app to take quick mcq test using Flask. 
 DB Used - sqlite 
@@ -19,6 +19,6 @@ To Setup Environment follow below steps:
 - Use Pip to Freeze Python Dependencies (pip freeze  > requirements.txt )
     - to install dependencies cmd - pip install -r <filename(requirements.txt)>
 - Build the docker image using Dockerfile
-- Write Docker Compose file
-# Writing Kubernetes Manifest files for the application
-# Creating Helm Chart
+- Write Docker Compose file (Pending)
+-Writing Kubernetes Manifest files for the application(Pending)
+-Creating Helm Chart (Pending)
