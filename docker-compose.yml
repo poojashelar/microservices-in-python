@@ -1,0 +1,15 @@
+version: "3"
+services:
+  mcqtestapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mcqexamcenter:2.0
+    # container_name: mcqexamcenter_2
+    ports:
+      - "5000:5000"
+    networks:
+      - mcqweb
+
+networks:
+    mcqweb:
